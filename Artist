@@ -1,0 +1,16 @@
+<?php
+class Artist {
+    public function __construct($ArtID, $ArtName, $ArtMana, $Art) {
+        $this->ArtID = $ArtID;
+        $this->ArtName = $ArtName;
+        $this->ArtMana = $ArtMana;
+        $this->ArtCont = $ArtCont;
+    }
+
+    public function print_details() {
+        echo "This car is a " . $this->ArtName . " " . $this->brand . ".\n";
+    }
+}
+
+$car = new Car("Toyota", 2006);
+$car->print_details();
